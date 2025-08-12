@@ -1,0 +1,71 @@
+:root {
+  --primary: #1f2937;
+  --secondary: #3b82f6;
+  --bg: #f9fafb;
+  --text: #111827;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  background: var(--bg);
+  color: var(--text);
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #ddd;
+}
+
+nav a {
+  color: var(--primary);
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--secondary);
+}
+
+main h1, main h2, main h3 {
+  margin-top: 1.5rem;
+  color: var(--primary);
+}
+
+main p { margin-top: 1rem; }
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--secondary);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn:hover { background: #2563eb; }
+
+.post-list { list-style: none; }
+.post-list li { margin-bottom: 1.5rem; }
+.post-list a { font-size: 1.2rem; color: var(--secondary); }
+.post-list small { color: #6b7280; display: block; }

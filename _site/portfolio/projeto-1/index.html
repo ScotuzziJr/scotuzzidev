@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pipeline ETL de dados do Distrowatch</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/">Início</a>
+      <a href="/blog/">Blog</a>
+      <a href="/portfolio/">Portfólio</a>
+      <a href="/curriculo.pdf" download>Currículo</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>ETL Pipeline — DistroWatch Data</h1>
+<h2>Visão Geral</h2>
+<p>Este projeto é um <strong>ETL Pipeline</strong> feito com <strong>Python</strong> e <strong>Apache Airflow</strong> para extrair, transformar e carregar dados do <a href="https://distrowatch.com">DistroWatch</a>.<br>
+O objetivo é organizar e analisar tendências, histórico de lançamentos e metadados de distribuições Linux.</p>
+<p><strong>Tecnologias usadas:</strong></p>
+<ul>
+<li><strong>Airflow</strong> — orquestra e agenda as tarefas ETL.</li>
+<li><strong>Python</strong> — scripts para extração, limpeza, transformação e carregamento.</li>
+<li><strong>Código modular</strong> — facilita manutenção e testes.</li>
+<li>Design preparado para integrar novos conectores ou fontes de dados.</li>
+</ul>
+<hr>
+<h2>Funcionalidades</h2>
+<ul>
+<li><strong>Workflows automatizados</strong> com Airflow, garantindo execução confiável.</li>
+<li><strong>Dados limpos e padronizados</strong> para análise ou armazenamento.</li>
+<li><strong>Agendamento configurável</strong> — permite execução periódica.</li>
+<li><strong>Logs e tratamento de erros</strong> para fácil monitoramento.</li>
+</ul>
+<hr>
+<h2>Arquitetura</h2>
+<ol>
+<li><strong>Extração</strong> — coleta dados do DistroWatch via web scraping.</li>
+<li><strong>Transformação</strong> — limpa, padroniza e organiza campos como datas e nomes.</li>
+<li><strong>Carga</strong> — salva dados processados em arquivos CSV.</li>
+<li><strong>Orquestração</strong> — Airflow gerencia ordem, tentativas e alertas.</li>
+</ol>
+<hr>
+<h2>Mais detalhes</h2>
+<p>Leia o artigo completo no <a href="https://www.linkedin.com/pulse/building-etl-pipeline-distrowatch-data-part-1-m%C3%A1rcio-scotuzzi-junior-rrdtf/?trackingId=cLCy%2BzHlTf6AT1DClH%2BLMA%3D%3D">LinkedIn</a></p>
+<p>Veja o projeto no GitHub: <a href="https://github.com/ScotuzziJr/etl-pipeline-distrowatch">ETL Pipeline — DistroWatch Data</a></p>
+
+  </main>
+
+  <footer>
+    <p>© <script>document.write(new Date().getFullYear())</script> Márcio Scotuzzi Jr. — <a href="mailto:scotuzzijunior@gmail.com">Contato</a></p>
+  </footer>
+</body>
+</html>
