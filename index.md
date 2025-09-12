@@ -22,7 +22,7 @@ title: "Márcio Scotuzzi Jr."
     </div>
     <div style="flex:1; min-width:250px; padding:1rem; border-radius:12px; background:#f5f5f5;">
       <h3>💻 Open Source</h3>
-      <p>Eu criei o <strong>The Bazaar</strong>, uma rede social open source para projetos open source. <a href="https://the-bazaar.onrender.com/" target="_blank">Confira aqui</a>.</p>
+      <p>Eu criei o <strong>The Bazaar</strong>, uma rede social open source para projetos open source. <a href="https://thebazaar.dev.br/" target="_blank">Confira aqui</a>.</p>
     </div>
   </div>
 </section>
