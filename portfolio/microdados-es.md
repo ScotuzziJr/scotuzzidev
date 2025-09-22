@@ -94,7 +94,7 @@ A escolha de uma profissão é muito pessoal, ou em teoria deveria ser. A verdad
 
 Ao olhar para o ensino de base, nota-se que a presença de meninas em olímpiadas de matemática, robótica e programação ainda é menor que a presença de meninos. Um motivo possível pode ser a falta de incentivo e, partindo dessa suposição, isso explica os baixos números de mulheres no ensino superior em áreas de computação. Iniciativas como o **Movimento Meninas Olímpicas** busca incentivar a participação de meninas em atividades voltadas para áreas **CTEM** ao longo do ensino fundamental e médio. Ações como essa podem ser cruciais para que, nos próximos anos, mais mulheres optem por seguir para áreas de tecnologia no ensino superior.
 
-O **Fórum Econômico Mundial** apresentou um [relatório](https://www.weforum.org/publications/the-future-of-jobs-report-2025/) em janeiro de 2025 listando os empregos que terão as maiores taxas de crescimento até 2030, sendo todos eles da área de computação. Portanto, é extremamente necessário a mudança dos números atuais da presença feminina no ensino superior no Brasil.
+O **Fórum Econômico Mundial** apresentou um [relatório](https://www.weforum.org/publications/the-future-of-jobs-report-2025/) em janeiro de 2025 listando os empregos que terão as maiores taxas de crescimento até 2030, sendo todos eles da área de computação. Portanto, é extremamente necessário a mudança dos números atuais da presença feminina no ensino superior em computação no Brasil.
 
 ---
 
