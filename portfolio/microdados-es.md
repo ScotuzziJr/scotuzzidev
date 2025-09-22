@@ -10,9 +10,9 @@ tags: portfolio
 
 ### O contexto
 
-Em 2022, o IBGE publicou a 3ª edição das [Estatísticas de Gênero: indicadores sociais das mulheres no Brasil]([Estatísticas de Gênero - Indicadores sociais das mulheres no Brasil | IBGE](https://www.ibge.gov.br/estatisticas/multidominio/genero/20163-estatisticas-de-genero-indicadores-sociais-das-mulheres-no-brasil.html), com dados que apontavam a baixa presença feminina em cursos superiores na área de tecnologia. 
+Em 2022, o IBGE publicou a 3ª edição das [Estatísticas de Gênero: indicadores sociais das mulheres no Brasil](https://www.ibge.gov.br/estatisticas/multidominio/genero/20163-estatisticas-de-genero-indicadores-sociais-das-mulheres-no-brasil.html), com dados que apontavam a baixa presença feminina em cursos superiores na área de tecnologia. 
 
-Não só isso, de 2012 para 2022 o percentual de mulheres concluintes do curso de Ciência da Computação caiu de 17,5% para 15%, de acordo com o [Censo da Educação Superior]([Resultados — Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira | Inep](https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/censo-da-educacao-superior/resultados)).
+Não só isso, de 2012 para 2022 o percentual de mulheres concluintes do curso de Ciência da Computação caiu de 17,5% para 15%, de acordo com o [Censo da Educação Superior](https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/censo-da-educacao-superior/resultados).
 
 Historicamente, as mulheres contribuíram para avanços significativos dentro da área de computação. **Grace Hopper** foi pioneira no estudo de compiladores, definindo bases que norteram o desenvolvimento de linguagens de programação; sem o trabalho de **Radia Perlman** e sua importante invenção, o *STP*, a internet como conhecemos não seria viável; **Barbara Liskov**, além de contribuir para princípios de desenvolvimento de software, também foi um nome importante no estudo de sistemas distribuídos tolerantes à falhas. Sem falar, é claro, de **Ada Lovelace**, considerada a primeira pessoa programadora do mundo.
 
@@ -22,7 +22,7 @@ A pergunta que surge, então, é: em um país onde as mulheres são as que mais 
 
 ### A análise
 
-O objetivo desse projeto de análise de dados é responder algumas perguntas sobre a presença feminina no ensino superior em computação no Brasil. A base de dados analisada  é a de [Microdados do Censo da Educação Superior]([Censo da Educação Superior — Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira | Inep](https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/censo-da-educacao-superior)), disponibilizada publicamente pelo **INEP** e o portal de dados do **Governo Federal**. O período analisado é de 2020 a 2023 - uma janela de 4 anos desde o último ano que a pesquisa foi divulgada. Olhar para diferentes anos permite entender como os dados variaram ao longo do tempo.
+O objetivo desse projeto de análise de dados é responder algumas perguntas sobre a presença feminina no ensino superior em computação no Brasil. A base de dados analisada  é a de [Microdados do Censo da Educação Superior](https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/censo-da-educacao-superior), disponibilizada publicamente pelo **INEP** e o portal de dados do **Governo Federal**. O período analisado é de 2020 a 2023 - uma janela de 4 anos desde o último ano que a pesquisa foi divulgada. Olhar para diferentes anos permite entender como os dados variaram ao longo do tempo.
 
 **Perguntas e hipóteses**
 
@@ -94,7 +94,7 @@ A escolha de uma profissão é muito pessoal, ou em teoria deveria ser. A verdad
 
 Ao olhar para o ensino de base, nota-se que a presença de meninas em olímpiadas de matemática, robótica e programação ainda é menor que a presença de meninos. Um motivo possível pode ser a falta de incentivo e, partindo dessa suposição, isso explica os baixos números de mulheres no ensino superior em áreas de computação. Iniciativas como o **Movimento Meninas Olímpicas** busca incentivar a participação de meninas em atividades voltadas para áreas **CTEM** ao longo do ensino fundamental e médio. Ações como essa podem ser cruciais para que, nos próximos anos, mais mulheres optem por seguir para áreas de tecnologia no ensino superior.
 
-O **Fórum Econômico Mundial** apresentou um [relatório]([The Future of Jobs Report 2025 | World Economic Forum](https://www.weforum.org/publications/the-future-of-jobs-report-2025/)) em janeiro de 2025 listando os empregos que terão as maiores taxas de crescimento até 2030, sendo todos eles da área de computação. Portanto, é extremamente necessário a mudança dos números atuais da presença feminina no ensino superior no Brasil.
+O **Fórum Econômico Mundial** apresentou um [relatório](https://www.weforum.org/publications/the-future-of-jobs-report-2025/) em janeiro de 2025 listando os empregos que terão as maiores taxas de crescimento até 2030, sendo todos eles da área de computação. Portanto, é extremamente necessário a mudança dos números atuais da presença feminina no ensino superior no Brasil.
 
 ---
 
