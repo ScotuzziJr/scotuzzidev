@@ -44,13 +44,13 @@ A partir dessas perguntas, podemos formular hipóteses sobre o tema:
 
 Começar com uma visão macro e afunilar para detalhes mais específicos permite construir gradativamente um melhor entendimento do tema. Portanto, o primeiro passo na análise será olhar para a proporção de ingressantes do sexo masculino e feminino nos últimos anos.
 
-<img src="/portfolio/imgs/distribuicao-ingressantes-es.png" title="" alt="distribuicao-ingressantes-es.png" data-align="center">
+<img src="/portfolio/imgs/distribuicao-ingressantes-es.png" title="" alt="distribuicao-ingressantes-es.png" data-align="center" width="500">
 
                                             *Fonte: autoria própria*
 
 Nota-se uma prevalência das mulheres no ensino superior, com uma diferença de 17,6% em relação aos homens; um número expressivo. Uma análise comparativa dos últimos anos permite responder a primeira hipótese dessa análise.
 
-<img src="/portfolio/imgs/evolucao-proporcao-ingressantes.png" title="" alt="evolucao-proporcao-ingressantes.png" data-align="center">
+<img src="/portfolio/imgs/evolucao-proporcao-ingressantes.png" title="" alt="evolucao-proporcao-ingressantes.png" data-align="center" width="500">
 
                                             *Fonte: autoria própria*
 
@@ -70,13 +70,13 @@ Os 4 principais cursos da área de tecnologia são:
 
 Portanto, a amostra analisada levará em consideração os dados referentes à esses cursos.
 
-<img src="/portfolio/imgs/proporcao-cursos-computacao.png" title="" alt="proporcao-cursos-computacao.png" data-align="center">
+<img src="/portfolio/imgs/proporcao-cursos-computacao.png" title="" alt="proporcao-cursos-computacao.png" data-align="center" width="500">
 
                                             *Fonte: autoria própria*
 
 A diferença entre homens e mulheres nos cursos de computação é discrepante, o que sustenta a hipótese de que a proporção de mulheres em cursos de computação permanece abaixo de 25% nos últimos anos. O gráfico abaixo permite olhar com maior detalhe.
 
-<img src="/portfolio/imgs/evolucao-mulheres-computacao.png" title="" alt="evolucao-mulheres-computacao.png" data-align="center">
+<img src="/portfolio/imgs/evolucao-mulheres-computacao.png" title="" alt="evolucao-mulheres-computacao.png" data-align="center" width="500">
 
                                             *Fonte: autoria própria*
 
