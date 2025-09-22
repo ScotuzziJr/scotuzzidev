@@ -2,6 +2,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("styles.css");
   eleventyConfig.addPassthroughCopy("curriculo.pdf");
   eleventyConfig.addPassthroughCopy("marc.jpg");
+  eleventyConfig.addPassthroughCopy("portfolio/imgs");
 
   // Filtro de data para posts
   eleventyConfig.addFilter("date", function(dateObj, format) {
