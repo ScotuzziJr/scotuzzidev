@@ -7,8 +7,8 @@ title: "Márcio Scotuzzi Jr."
   <img src="/marc.jpg" alt="Foto de Márcio" style="width:150px; border-radius:50%; flex-shrink:0;">
   <div style="flex:1; min-width:250px;">
     <h1 style="margin-bottom:0.5rem;">Olá, eu sou o Márcio 👋</h1>
-    <p>Sou desenvolvedor fullstack com experiência em <strong>Python, Django, FastAPI, Node e React</strong>, criando soluções eficientes para web em ambientes em nuvem.</p>
-    <p>Também tenho interesse em <strong>dados</strong> e estou em uma jornada de transição de carreira.</p>
+    <p>Sou desenvolvedor fullstack, focado em backend, com experiência em <strong>Python, Django, FastAPI, Node e React</strong>, criando soluções eficientes para web em ambientes em nuvem. Também tenho vivência em <strong>ciência de dados</strong> e adoro construir <strong>pipelines ETL</strong> e <strong>dashboards.</strong></p>
+    <p>Aqui você encontra links úteis para entrar em contato comigo, além de projetos que mostram um pouco do meu trabalho. A minha parte favorita desse site, no entanto, é seção <a href="/blog">blog</a>, onde eu compartilho ideias sobre diferentes temas. Fique à vontade para explorar e, sobretudo, se conectar. Eu adoro conhecer novas pessoas e conversar sobre variados assuntos!</p>
     <a href="/curriculo.pdf" class="btn" style="margin-top:1rem;">📄 Baixar meu currículo</a>
   </div>
 </section>
@@ -18,7 +18,7 @@ title: "Márcio Scotuzzi Jr."
   <div style="display:flex; gap:1.5rem; flex-wrap:wrap; margin-top:1rem;">
     <div style="flex:1; min-width:250px; padding:1rem; border-radius:12px; background:#f5f5f5;">
       <h3>🎙️ Podcast</h3>
-      <p><strong>Testando em Prod</strong> – compartilho experiências e insights sobre desenvolvimento, tecnologia e cultura dev.</p>
+      <p><strong>Testando em Prod</strong> – compartilho experiências e insights sobre desenvolvimento, tecnologia e cultura dev. <a href="https://open.spotify.com/show/10RjTXaUYMPjcmbfxyqaGm?si=e608649bea78482e">Ouça agora</a></p>
     </div>
     <div style="flex:1; min-width:250px; padding:1rem; border-radius:12px; background:#f5f5f5;">
       <h3>💻 Open Source</h3>

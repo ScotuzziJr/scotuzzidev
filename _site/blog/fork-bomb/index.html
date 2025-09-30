@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Virtualização, processos e fork bomb</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/">Início</a>
+      <a href="/blog/">Blog</a>
+      <a href="/portfolio/">Portfólio</a>
+      <a href="/curriculo.pdf" download>Currículo</a>
+    </nav>
+  </header>
+
+  <main>
+    <p>Em maio de 2025, a OpenAI anunciou seu novo agente <a href="https://openai.com/index/introducing-codex/">Codex</a>, cujo diferencial é a execução paralela de tarefas, todas rodando diretamente na nuvem.</p>
+<p>Lendo sobre o Codex, comecei a refletir sobre virtualização, processos, contêineres e sobre como, muitas vezes, não paramos para observar mais de perto como certos recursos que usamos no dia a dia funcionam.</p>
+<p>A proposta deste texto, então, é &quot;escovar bits&quot; sobre alguns conceitos de sistemas operacionais, partindo da seguinte pergunta: rodar um fork bomb em uma máquina virtual pode comprometer os recursos da máquina hospedeira? E no caso de estarmos usando um contêiner Docker?</p>
+<h2>Vamos dar um passo atrás</h2>
+<p>Para alguns, a resposta à pergunta acima pode parecer óbvia. Para outros, nem tanto. Há ainda um terceiro grupo que talvez se pergunte: o que é um fork bomb?</p>
+<p>Fork bomb é uma forma de gerar processos recursivamente. E, para garantirmos que estamos todos na mesma página, vamos recorrer ao <a href="https://pt.wikipedia.org/wiki/Andrew_Stuart_Tanenbaum">Tanenbaum</a> e sua definição de processo no livro <a href="https://www.amazon.com.br/Sistemas-Operacionais-Modernos-Andrew-Tanenbaum/dp/8582606168">Sistemas Operacionais Modernos</a>:</p>
+<blockquote>
+<p><em>O conceito mais central em qualquer sistema operacional é o processo: uma abstração de um programa em execução [...] A ideia principal é que um processo é uma atividade. Ele possui programa, entrada, saída e um estado.</em></p>
+</blockquote>
+<p>Assim, ao criarmos processos de forma recursiva e indefinida, passamos a consumir os recursos do sistema operacional, o que leva eventualmente ao esgotamento desses recursos e, consequentemente, à &quot;quebra&quot; do sistema.</p>
+<p>Para entendermos melhor como esse esgotamento acontece, precisamos detalhar como processos são criados.</p>
+<h2>Criação de processos</h2>
+<p>Tanenbaum descreve quatro formas pelas quais um processo pode ser criado:</p>
+<ol>
+<li>
+<p>Durante a inicialização do sistema;</p>
+</li>
+<li>
+<p>Através da execução de uma chamada de sistema de criação de processo por um processo em execução (este é o ponto central para entender o fork bomb);</p>
+</li>
+<li>
+<p>A partir de uma solicitação do usuário para criar um novo processo;</p>
+</li>
+<li>
+<p>Pelo início de uma tarefa em lote (batch job).</p>
+</li>
+</ol>
+<p>Quando um sistema operacional é iniciado, diversos processos são carregados — alguns em primeiro plano, outros em segundo. Isso é necessário para o funcionamento adequado do sistema. A partir daí, todos os novos processos passam a ser criados a partir de processos já existentes. Cada processo possui informações importantes associadas, como endereçamento de memória.</p>
+<p>O ponto crucial aqui é que, embora um processo filho compartilhe algumas informações com o processo pai (aquele que o criou), cada processo tem seu próprio espaço de memória para escrita, o que garante que não haverá interferência mútua na execução de suas tarefas. Portanto, a criação de novos processos consome cada vez mais memória da máquina.</p>
+<p>E onde entra o fork? Em sistemas baseados em Unix, a chamada de sistema responsável pela criação de novos processos é justamente o fork().</p>
+<p>Agora que entendemos como os processos são criados e como o fork bomb pode causar o esgotamento de recursos, vamos analisar se isso também se aplica ao executar o fork bomb em uma máquina virtualizada.</p>
+<h2>Máquinas virtuais</h2>
+<p>Uma máquina virtual (VM) é um ambiente isolado que simula um computador físico completo, permitindo a execução de múltiplos sistemas operacionais independentes em um único hardware.</p>
+<p>O componente central da virtualização é o hipervisor (ou Virtual Machine Monitor – VMM), que é responsável por criar e gerenciar as VMs. Ele pode atuar diretamente sobre o hardware, sem necessidade de um sistema operacional intermediário, ou funcionar como uma aplicação instalada sobre um sistema operacional convencional. Neste segundo caso, o hipervisor depende do sistema operacional hospedeiro para acessar os recursos de hardware.</p>
+<p>Essa segunda abordagem é adotada por softwares como o <a href="https://www.virtualbox.org/">VirtualBox</a>. Nesses casos, como o sistema hospedeiro intermedia o acesso aos recursos, podemos limitar seu uso por parte da VM. Logo, ao executarmos um fork bomb em uma máquina virtual, o consumo de recursos ficará restrito àqueles previamente configurados — o que impede o esgotamento dos recursos da máquina física.</p>
+<p>E no caso do Docker?</p>
+<h2>Contêineres</h2>
+<p>O Docker não utiliza hipervisor — e esse é justamente o seu diferencial. Enquanto as VMs simulam um computador completo em um ambiente isolado, os contêineres Docker isolam apenas os processos, utilizando o mesmo kernel da máquina hospedeira e seus recursos (abordagem bare metal).</p>
+<p>Portanto, um fork bomb executado dentro de um contêiner Docker pode sim consumir os recursos da máquina hospedeira e causar seu esgotamento.</p>
+<h2>É o fim?</h2>
+<p>A explicação acima simplifica a questão ao propor a seguinte dicotomia: fork bomb em VM não é perigoso, mas em contêiner sim.</p>
+<p>A realidade, porém, é que em ambos os cenários podemos permitir ou impedir os efeitos de um fork bomb — pois tanto VMs quanto contêineres permitem configurar limites de uso de recursos.</p>
+<p>No fundo, o objetivo principal aqui era entender melhor os conceitos por trás da virtualização e dos processos.</p>
+<p>Para aprender como criar e se proteger de fork bombs, recomendo este <a href="https://crg.eti.br/pt-br/post/forkbomb-do-codigo-a-defesa/">texto</a>.</p>
+<hr>
+<p><em>Embora tenha havido consulta a livros e outros materiais sobre o tema, erros conceituais podem eventualmente aparecer. Fique à vontade para deixar um comentário caso identifique algum equívoco :)</em></p>
+
+  </main>
+
+  <footer>
+    <p>© <script>document.write(new Date().getFullYear())</script> Márcio Scotuzzi Jr. — <a href="mailto:scotuzzijunior@gmail.com">Contato</a></p>
+  </footer>
+</body>
+</html>

@@ -18,35 +18,74 @@
 
   <main>
     <h1>Análise da presença feminina no ensino superior em computação no Brasil</h1>
-<h2>Objetivo</h2>
-<p>Analisar a presença feminina nos cursos superiores no Brasil, com ênfase em cursos de computação, a partir dos microdados do Censo da Educação Superior.</p>
-<h2>Fonte de dados</h2>
-<p>Os dados utilizados são os Microdados do Censo da Educação Superior, disponibilizados pelo INEP:<br>
-https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/censo-da-educacao-superior</p>
-<h2>Perguntas e hipóteses</h2>
+<h3>O contexto</h3>
+<p>Em 2022, o IBGE publicou a 3ª edição das <a href="https://www.ibge.gov.br/estatisticas/multidominio/genero/20163-estatisticas-de-genero-indicadores-sociais-das-mulheres-no-brasil.html">Estatísticas de Gênero: indicadores sociais das mulheres no Brasil</a>, com dados que apontavam a baixa presença feminina em cursos superiores na área de tecnologia.</p>
+<p>Não só isso, de 2012 para 2022 o percentual de mulheres concluintes do curso de Ciência da Computação caiu de 17,5% para 15%, de acordo com o <a href="https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/censo-da-educacao-superior/resultados">Censo da Educação Superior</a>.</p>
+<p>Historicamente, as mulheres contribuíram para avanços significativos dentro da área de computação. <strong>Grace Hopper</strong> foi pioneira no estudo de compiladores, definindo bases que norteram o desenvolvimento de linguagens de programação; sem o trabalho de <strong>Radia Perlman</strong> e sua importante invenção, o <em>STP</em>, a internet como conhecemos não seria viável; <strong>Barbara Liskov</strong>, além de contribuir para princípios de desenvolvimento de software, também foi um nome importante no estudo de sistemas distribuídos tolerantes à falhas. Sem falar, é claro, de <strong>Ada Lovelace</strong>, considerada a primeira pessoa programadora do mundo.</p>
+<p>A pergunta que surge, então, é: em um país onde as mulheres são as que mais recebem diploma de ensino superior, por que elas não estão nas salas de aulas de cursos como Ciência da Computação?</p>
+<hr>
+<h3>A análise</h3>
+<p>O objetivo desse projeto de análise de dados é responder algumas perguntas sobre a presença feminina no ensino superior em computação no Brasil. A base de dados analisada  é a de <a href="https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/censo-da-educacao-superior">Microdados do Censo da Educação Superior</a>, disponibilizada publicamente pelo <strong>INEP</strong> e o portal de dados do <strong>Governo Federal</strong>. O período analisado é de 2020 a 2023 - uma janela de 4 anos desde o último ano que a pesquisa foi divulgada. Olhar para diferentes anos permite entender como os dados variaram ao longo do tempo.</p>
+<p><strong>Perguntas e hipóteses</strong></p>
+<p>Todo projeto de análise de dados precisa, além de um recorte, de hipóteses que servem como guia para a análise e perguntas que ditam como os dados serão explorados. Dentro do recorte já apresentado, a análise pode ser dividida em duas perguntas principais, uma de caráter mais amplo e outra mais específica:</p>
 <ul>
-<li>Como evoluiu a presença feminina no ensino superior brasileiro ao longo dos últimos anos?</li>
-<li>Hipótese 1: A proporção de mulheres matriculadas no ensino superior aumentou nos últimos 5 anos.</li>
-<li>Hipótese 2: A proporção de mulheres é maior em instituições privadas do que em instituições públicas.</li>
-<li>Como está a presença de mulheres em cursos de computação, historicamente dominados por homens?</li>
-<li>Hipótese 3: A proporção de mulheres em cursos de computação permanece abaixo de 25% nos últimos 5 anos.</li>
+<li>
+<p>Como evoluiu a presença feminina no ensino superior brasileiro ao longo dos últimos anos?</p>
+</li>
+<li>
+<p>Como está a presença de mulheres em cursos de computação, historicamente dominados por homens?</p>
+</li>
 </ul>
-<h2>Metodologia</h2>
+<p>A partir dessas perguntas, podemos formular hipóteses sobre o tema:</p>
 <ul>
-<li>Importação e limpeza dos microdados do Censo da Educação Superior.</li>
-<li>Análise exploratória dos dados focando em gênero, curso e tipo de instituição.</li>
-<li>Cálculo de proporções de mulheres em diferentes cursos e instituições ao longo do tempo.</li>
-<li>Visualização dos resultados com gráficos de linha e barra.</li>
-</ul>
-<h2>Resultados principais</h2>
-<ul>
-<li>Evolução da presença feminina no ensino superior brasileiro nas últimas décadas.</li>
-<li>Diferença significativa na proporção de mulheres entre instituições públicas e privadas.</li>
-<li>Presença feminina inferior a 25% nos cursos de computação, confirmando a hipótese da subrepresentação.</li>
+<li>
+<p>A proporção de mulheres matriculadas no ensino superior aumentou nos últimos anos</p>
+</li>
+<li>
+<p>A proporção de mulheres em cursos de computação permanece abaixo de 25% nos últimos anos</p>
+</li>
 </ul>
 <hr>
-<h2>Mais detalhes</h2>
-<p>Veja o projeto no GitHub: <a href="https://github.com/ScotuzziJr/analise-microdados-es-brasil">Análise de Microdados do Ensino Superior no Brasil</a></p>
+<h3>Visão geral</h3>
+<p>Começar com uma visão macro e afunilar para detalhes mais específicos permite construir gradativamente um melhor entendimento do tema. Portanto, o primeiro passo na análise será olhar para a proporção de ingressantes do sexo masculino e feminino nos últimos anos.</p>
+<img src="/portfolio/imgs/distribuicao-ingressantes-es.png" title="" alt="distribuicao-ingressantes-es.png" data-align="center" width="500">
+<p><em>Fonte: autoria própria</em></p>
+<p>Nota-se uma prevalência das mulheres no ensino superior, com uma diferença de 17,6% em relação aos homens; um número expressivo. Uma análise comparativa dos últimos anos permite responder a primeira hipótese dessa análise.</p>
+<img src="/portfolio/imgs/evolucao-proporcao-ingressantes.png" title="" alt="evolucao-proporcao-ingressantes.png" data-align="center" width="500">
+<p><em>Fonte: autoria própria</em></p>
+<p>A proporção de mulheres matriculadas no ensino superior aumentou nos últimos anos.</p>
+<p>Em relação aos cursos de computação, porém, quais são os números?</p>
+<p>Os 4 principais cursos da área de tecnologia são:</p>
+<ul>
+<li>
+<p>Ciência da Computação</p>
+</li>
+<li>
+<p>Engenharia de Computação</p>
+</li>
+<li>
+<p>Análises e Desenvolvimento de Sistemas</p>
+</li>
+<li>
+<p>Sistemas de Informação</p>
+</li>
+</ul>
+<p>Portanto, a amostra analisada levará em consideração os dados referentes à esses cursos.</p>
+<img src="/portfolio/imgs/proporcao-cursos-computacao.png" title="" alt="proporcao-cursos-computacao.png" data-align="center" width="500">
+<p><em>Fonte: autoria própria</em></p>
+<p>A diferença entre homens e mulheres nos cursos de computação é discrepante, o que sustenta a hipótese de que a proporção de mulheres em cursos de computação permanece abaixo de 25% nos últimos anos. O gráfico abaixo permite olhar com maior detalhe.</p>
+<img src="/portfolio/imgs/evolucao-mulheres-computacao.png" title="" alt="evolucao-mulheres-computacao.png" data-align="center" width="500">
+<p><em>Fonte: autoria própria</em></p>
+<p>O percentual mais alto da presença feminina em cursos de computação foi no curso de Análise e Desenvolvimento de Sistemas, que atingiu 21% em 2022 e manteve o mesmo percentual em 2023, seguido por Sistemas de Informação que, em 2023, também atingiu a marca de 21%.</p>
+<p>Embora a presença feminina em cursos de computação no Brasil seja significativemnte menor do que a presença masculina, o padrão observado é de uma crescente. Ainda existe esperança.</p>
+<hr>
+<h3>Reflexões</h3>
+<p>O papel social frequentemente atribuído às mulheres envolve atividades voltadas à educação e ao cuidado. O mesmo relatório do <strong>IBGE</strong> que aponta a baixa presença feminina em cursos de formação <strong>CTEM (Ciência, Tecnologias e Matemática)</strong>, mostra como elas são a maioria nas áreas de saúde e ensino.</p>
+<p>A escolha de uma profissão é muito pessoal, ou em teoria deveria ser. A verdade é que pesquisas recentes mostram que a escolha da profissão é influenciada, muitas vezes de forma inconsciente, pelas áreas e atividades às quais o indivíduo é exposto desde a infância e adolescência. O ambiente familiar, social e escolar exerce papel fundamental na formação da identidade profissional, onde expectativas e valores são transmitidos, muitas vezes moldando as escolhas profissionais dos jovens antes mesmo deles terem maturidade plena para decidir.</p>
+<p>Ao olhar para o ensino de base, nota-se que a presença de meninas em olímpiadas de matemática, robótica e programação ainda é menor que a presença de meninos. Um motivo possível pode ser a falta de incentivo e, partindo dessa suposição, isso explica os baixos números de mulheres no ensino superior em áreas de computação. Iniciativas como o <strong>Movimento Meninas Olímpicas</strong> busca incentivar a participação de meninas em atividades voltadas para áreas <strong>CTEM</strong> ao longo do ensino fundamental e médio. Ações como essa podem ser cruciais para que, nos próximos anos, mais mulheres optem por seguir para áreas de tecnologia no ensino superior.</p>
+<p>O <strong>Fórum Econômico Mundial</strong> apresentou um <a href="https://www.weforum.org/publications/the-future-of-jobs-report-2025/">relatório</a> em janeiro de 2025 listando os empregos que terão as maiores taxas de crescimento até 2030, sendo todos eles da área de computação. Portanto, é extremamente necessário a mudança dos números atuais da presença feminina no ensino superior em computação no Brasil.</p>
+<hr>
+<p><em>O notebook com a análise completa pode ser encontrado no <a href="https://github.com/ScotuzziJr/analise-microdados-es-brasil">repositório</a></em></p>
 
   </main>
 
