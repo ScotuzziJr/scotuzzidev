@@ -4,10 +4,10 @@ title: "Márcio Scotuzzi Jr."
 ---
 
 <section style="display:flex; align-items:center; gap:2rem; margin-top:3rem; flex-wrap:wrap;">
-  <img src="/marc.jpg" alt="Foto de Márcio" style="width:150px; border-radius:50%; flex-shrink:0;">
+  <img src="/marc.jpg" alt="Foto de Márcio" style="width:200px; border-radius:50%; flex-shrink:0;">
   <div style="flex:1; min-width:250px;">
     <h1 style="margin-bottom:0.5rem;">Olá, eu sou o Márcio 👋</h1>
-    <p>Sou desenvolvedor fullstack, focado em backend, com experiência em <strong>Python, Django, FastAPI, Node e React</strong>, criando soluções eficientes para web em ambientes em nuvem. Também tenho vivência em <strong>ciência de dados</strong> e adoro construir <strong>pipelines ETL</strong> e <strong>dashboards.</strong></p>
+    <p>Depois de quatro anos atuando como desenvolvedor fullstack com tecnologias como <strong>Python, Django, FastAPI, Node e React</strong>, criando soluções para web em ambientes em nuvem eu passei por uma transição de carreira para a área de dados. Isso aconteceu de forma espontânea, principalmente devido a minha vivência em <strong>ciência de dados</strong>, contrução de <strong>pipelines ETL</strong> e <strong>dashboards.</strong></p>
     <p>Aqui você encontra links úteis para entrar em contato comigo, além de projetos que mostram um pouco do meu trabalho. A minha parte favorita desse site, no entanto, é seção <a href="/blog">blog</a>, onde eu compartilho ideias sobre diferentes temas. Fique à vontade para explorar e, sobretudo, se conectar. Eu adoro conhecer novas pessoas e conversar sobre variados assuntos!</p>
     <a href="/curriculo.pdf" class="btn" style="margin-top:1rem;">📄 Baixar meu currículo</a>
   </div>
@@ -28,10 +28,10 @@ title: "Márcio Scotuzzi Jr."
 </section>
 
 <section style="margin-top:4rem;">
-  <h2>Me acompanhe</h2>
-  <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:1rem;">
-    <a href="https://github.com/ScotuzziJr/" target="_blank" style="padding:0.5rem 1rem; background:#333; color:white; border-radius:8px;">GitHub</a>
-    <a href="https://www.linkedin.com/in/m%C3%A1rcio-scotuzzi-junior-843041193/" target="_blank" style="padding:0.5rem 1rem; background:#0A66C2; color:white; border-radius:8px;">LinkedIn</a>
-    <a href="https://www.youtube.com/@marcpy" target="_blank" style="padding:0.5rem 1rem; background:#FF0000; color:white; border-radius:8px;">YouTube</a>
+  <h3 style="display: flex; justify-content: center;">Me acompanhe</h3>
+  <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:1rem;justify-content:center;">
+    <a href="https://github.com/ScotuzziJr/" target="_blank" style="font-size: 13px; padding:0.5rem 1rem; background:#333; color:white; border-radius:5px;">GitHub</a>
+    <a href="https://www.linkedin.com/in/m%C3%A1rcio-scotuzzi-junior-843041193/" target="_blank" style="font-size: 13px; padding:0.5rem 1rem; background:#0A66C2; color:white; border-radius:5px;">LinkedIn</a>
+    <a href="https://www.youtube.com/@marcpy" target="_blank" style="font-size: 13px; padding:0.5rem 1rem; background:#FF0000; color:white; border-radius:5px;">YouTube</a>
   </div>
 </section>
