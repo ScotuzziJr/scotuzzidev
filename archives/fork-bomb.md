@@ -3,7 +3,7 @@ layout: base.njk
 title: "virtualização, processos e fork bomb"
 excerpt: "vamos escovar bits sobre sistemas operacionais partindo da seguinte pergunta: rodar um fork bomb em uma máquina virtual pode comprometer os recursos da máquina hospedeira? e no caso de estarmos usando um contêiner Docker?"
 date: 2025-08-15
-tags: blog
+tags: archives
 ---
 
 em maio de 2025, a OpenAI anunciou seu novo agente [Codex](https://openai.com/index/introducing-codex/), cujo diferencial é a execução paralela de tarefas, todas rodando diretamente na nuvem.

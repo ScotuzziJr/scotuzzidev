@@ -3,7 +3,7 @@ layout: base.njk
 title: "quando falo sobre dados"
 excerpt: "volta e meia alguém me pergunta 'Você trabalha com o que mesmo?'"
 date: 2026-01-13
-tags: blog
+tags: archives
 ---
 
 não existe uma experiência singular na vida, de forma que profissionais de tecnologia volta e meia se pegam pensando em como explicar para quem não é da área (sobretudo pessoas mais velhas) o que exatamente faz um(a) [_insira sua área de atuação aqui_].

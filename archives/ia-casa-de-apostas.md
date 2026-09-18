@@ -3,7 +3,7 @@ layout: base.njk
 title: "a inteligência artificial virou uma casa de apostas"
 excerpt: "o que o lançamento do GPT-5 nos diz sobre o rumo das IAs?"
 date: 2025-08-15
-tags: blog
+tags: archives
 ---
 
 desde o lançamento do GPT-5 na semana passada, sites de tecnologia e jornais passaram a publicar textos que apontam experiências problemáticas do que, até então, era a maior promessa da OpenAI. o novo modelo parece mais "burro", de acordo com muitos usuários e colocou em dúvida até mesmo a possibilidade de termos uma AGI em um futuro próximo, ideia que vinha sendo defendida por Sam Altman, CEO da OpenAI. 

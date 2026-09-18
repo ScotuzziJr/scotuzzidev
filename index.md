@@ -4,5 +4,5 @@ title: "marc."
 templateEngineOverride: njk,md
 ---
 
-{% set collectionName = "blog" %}
+{% set collectionName = "archives" %}
 {% include "post-list.njk" %}

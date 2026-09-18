@@ -3,7 +3,7 @@ layout: base.njk
 title: "testando em prod 1 - patos de borracha"
 excerpt: "em um mundo dominado pelas IAs, como o senso de comunidade é afetado dentro do desenvolvimento de software?"
 date: 2025-08-02
-tags: blog
+tags: archives
 ---
 
 a área de tecnologia, como muitas outras áreas, possui um folclore próprio – com histórias, mitos e tradições que se perpetuaram ao longo dos anos através da oralidade e, é claro, da internet. uma ideia que habita o imaginário de muitos devs é a do pato de borracha. dizem que ao estar batendo cabeça com um bug no código, você pode explicar cada parte dele para um pato de borracha em voz alta e, eventualmente, o problema vai saltar nos seus olhos. eu, particularmente, nunca falei com nenhum pato de borracha e nem conheço quem tenha feito isso. a origem do rubber duck debugging (depuração/debug do pato de borracha) surge no livro The Pragmatic Programmer, de Andrew Hunt e David Thomas e defende a ideia de que explicar linha a linha do código obriga o programador a analisar de forma mais crítica aquilo que escreveu. os estadunidenses parecem ter menos traquejo social do que nós, brasileiros, que geralmente optamos por abordar um colega ao invés de ficar falando com um objeto inanimado.

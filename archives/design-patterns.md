@@ -3,7 +3,7 @@ layout: base.njk
 title: "aprenda padrões de projeto, mas não se apegue às implementações"
 excerpt: "padrões de projetos são ferramentas poderosas no desenvolvimento de software, mas copiá-los cegamente é pior do que não usá-los."
 date: 2025-05-23
-tags: blog
+tags: archives
 ---
 
 a máxima "você não é o primeiro a passar por isso" se aplica muito bem à programação e, por isso, um bom ponto de partida para resolver um problema é ver como outras pessoas o solucionaram antes de você.

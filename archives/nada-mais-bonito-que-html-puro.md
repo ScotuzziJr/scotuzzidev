@@ -3,7 +3,7 @@ layout: base.njk
 title: "nada mais bonito que HTML puro"
 excerpt: "as vezes é bom lembrar que o conteúdo vale mais que a forma"
 date: 2026-09-18
-tags: blog
+tags: archives
 ---
 
 eu gosto de blogs e digital gardens pelo mesmo motivo que eu gosto de crônicas: o texto vem sempre de um ponto de vista muito particular de quem escreve. geralmente esses espaços são focados em um tema, mas como vida é dinâmica e as pessoas são multifacetadas, as tangentes tornam-se naturais nas postagens.

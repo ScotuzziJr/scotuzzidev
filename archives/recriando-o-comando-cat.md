@@ -3,7 +3,7 @@ layout: base.njk
 title: "recriando o comando cat do Linux em C"
 excerpt: "o projeto GNU/Linux foi construído em C e uma boa forma de aprender essa linguagem é recriando utilitários comuns desse sistema operacional."
 date: 2024-02-27
-tags: blog
+tags: archives
 ---
 
 no dia a dia, nós usuários de Linux costumamos utilizar uma série de programas simples, porém extremamente úteis. um que eu utilizo com frequência é o **cat** - que nos permite exibir no terminal o conteúdo de um arquivo. porém, você já parou para pensar em como esse programinha funciona?

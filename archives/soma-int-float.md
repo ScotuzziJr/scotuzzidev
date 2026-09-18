@@ -3,7 +3,7 @@ layout: base.njk
 title: "por que a soma de um int com um float resulta em um float?"
 excerpt: "ao aprender programação, nós aceitamos certas ideias como verdade sem entender de fato o que está por trás delas."
 date: 2024-02-18
-tags: blog
+tags: archives
 ---
 
 ## introdução
