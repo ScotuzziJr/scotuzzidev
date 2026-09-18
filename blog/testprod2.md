@@ -1,6 +1,6 @@
 ---
 layout: base.njk
-title: "testando em prod 2 - Um livro e um projeto open source"
+title: "testando em prod 2 - um livro e um projeto open source"
 excerpt: "como um livro publicado em 1999 ainda é capaz de influenciar a forma como olhamos para métodos de engenharia de software? e como esse livro me inspirou a tirar um projeto do papel?"
 date: 2025-08-16
 tags: blog
