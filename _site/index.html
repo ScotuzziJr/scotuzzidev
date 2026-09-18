@@ -2,56 +2,66 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Márcio Scotuzzi Jr.</title>
+  <title>marc.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
   <header>
+    <a href="/" class="site-title">marc.</a>
     <nav>
-      <a href="/">Início</a>
-      <a href="/blog/">Blog</a>
-      <a href="/portfolio/">Portfólio</a>
-      <a href="/curriculo.pdf" download>Currículo</a>
+      <a href="/sobre/">sobre</a>
     </nav>
   </header>
 
   <main>
-    <section style="display:flex; align-items:center; gap:2rem; margin-top:3rem; flex-wrap:wrap;">
-  <img src="/marc.jpg" alt="Foto de Márcio" style="width:200px; border-radius:50%; flex-shrink:0;">
-  <div style="flex:1; min-width:250px;">
-    <h1 style="margin-bottom:0.5rem;">Olá, eu sou o Márcio 👋</h1>
-    <p>Depois de quatro anos atuando como desenvolvedor fullstack com tecnologias como <strong>Python, Django, FastAPI, Node e React</strong>, criando soluções para web em ambientes em nuvem eu passei por uma transição de carreira para a área de dados. Isso aconteceu de forma espontânea, principalmente devido a minha vivência em <strong>ciência de dados</strong>, contrução de <strong>pipelines ETL</strong> e <strong>dashboards.</strong></p>
-    <p>Aqui você encontra links úteis para entrar em contato comigo, além de projetos que mostram um pouco do meu trabalho. A minha parte favorita desse site, no entanto, é seção <a href="/blog">blog</a>, onde eu compartilho ideias sobre diferentes temas. Fique à vontade para explorar e, sobretudo, se conectar. Eu adoro conhecer novas pessoas e conversar sobre variados assuntos!</p>
-    <a href="/curriculo.pdf" class="btn" style="margin-top:1rem;">📄 Baixar meu currículo</a>
-  </div>
-</section>
-<section style="margin-top:4rem;">
-  <h2>Meus Projetos & Conteúdos</h2>
-  <div style="display:flex; gap:1.5rem; flex-wrap:wrap; margin-top:1rem;">
-    <div style="flex:1; min-width:250px; padding:1rem; border-radius:12px; background:#f5f5f5;">
-      <h3>🎙️ Podcast</h3>
-      <p><strong>Testando em Prod</strong> – compartilho experiências e insights sobre desenvolvimento, tecnologia e cultura dev. <a href="https://open.spotify.com/show/10RjTXaUYMPjcmbfxyqaGm?si=e608649bea78482e">Ouça agora</a></p>
-    </div>
-    <div style="flex:1; min-width:250px; padding:1rem; border-radius:12px; background:#f5f5f5;">
-      <h3>💻 Open Source</h3>
-      <p>Eu criei o <strong>The Bazaar</strong>, uma rede social open source para projetos open source. <a href="https://thebazaar.dev.br/" target="_blank">Confira aqui</a>.</p>
-    </div>
-  </div>
-</section>
-<section style="margin-top:4rem;">
-  <h3 style="display: flex; justify-content: center;">Me acompanhe</h3>
-  <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:1rem;justify-content:center;">
-    <a href="https://github.com/ScotuzziJr/" target="_blank" style="font-size: 13px; padding:0.5rem 1rem; background:#333; color:white; border-radius:5px;">GitHub</a>
-    <a href="https://www.linkedin.com/in/m%C3%A1rcio-scotuzzi-junior-843041193/" target="_blank" style="font-size: 13px; padding:0.5rem 1rem; background:#0A66C2; color:white; border-radius:5px;">LinkedIn</a>
-    <a href="https://www.youtube.com/@marcpy" target="_blank" style="font-size: 13px; padding:0.5rem 1rem; background:#FF0000; color:white; border-radius:5px;">YouTube</a>
-  </div>
-</section>
+    <ul class="post-list">
+  <li>
+    <a href="/blog/quando-falo-sobre-dados/">quando falo sobre dados</a>
+    <small>— 12/01/2026</small>
+    <p>volta e meia alguém me pergunta &#39;Você trabalha com o que mesmo?&#39;</p>
+  </li>
+  <li>
+    <a href="/blog/testprod2/">testando em prod 2 - Um livro e um projeto open source</a>
+    <small>— 15/08/2025</small>
+    <p>como um livro publicado em 1999 ainda é capaz de influenciar a forma como olhamos para métodos de engenharia de software? e como esse livro me inspirou a tirar um projeto do papel?</p>
+  </li>
+  <li>
+    <a href="/blog/ia-casa-de-apostas/">a inteligência artificial virou uma casa de apostas</a>
+    <small>— 14/08/2025</small>
+    <p>o que o lançamento do GPT-5 nos diz sobre o rumo das IAs?</p>
+  </li>
+  <li>
+    <a href="/blog/fork-bomb/">virtualização, processos e fork bomb</a>
+    <small>— 14/08/2025</small>
+    <p>vamos escovar bits sobre sistemas operacionais partindo da seguinte pergunta: rodar um fork bomb em uma máquina virtual pode comprometer os recursos da máquina hospedeira? e no caso de estarmos usando um contêiner Docker?</p>
+  </li>
+  <li>
+    <a href="/blog/testprod1/">testando em prod 1 - patos de borracha</a>
+    <small>— 01/08/2025</small>
+    <p>em um mundo dominado pelas IAs, como o senso de comunidade é afetado dentro do desenvolvimento de software?</p>
+  </li>
+  <li>
+    <a href="/blog/design-patterns/">aprenda padrões de projeto, mas não se apegue às implementações</a>
+    <small>— 22/05/2025</small>
+    <p>padrões de projetos são ferramentas poderosas no desenvolvimento de software, mas copiá-los cegamente é pior do que não usá-los.</p>
+  </li>
+  <li>
+    <a href="/blog/recriando-o-comando-cat/">recriando o comando cat do Linux em C</a>
+    <small>— 26/02/2024</small>
+    <p>o projeto GNU/Linux foi construído em C e uma boa forma de aprender essa linguagem é recriando utilitários comuns desse sistema operacional.</p>
+  </li>
+  <li>
+    <a href="/blog/soma-int-float/">por que a soma de um int com um float resulta em um float?</a>
+    <small>— 17/02/2024</small>
+    <p>ao aprender programação, nós aceitamos certas ideias como verdade sem entender de fato o que está por trás delas.</p>
+  </li>
+</ul>
 
   </main>
 
   <footer>
-    <p>© <script>document.write(new Date().getFullYear())</script> Márcio Scotuzzi Jr. — <a href="mailto:scotuzzijunior@gmail.com">Contato</a></p>
+    <p>© <script>document.write(new Date().getFullYear())</script> márcio scotuzzi jr.</p>
   </footer>
 </body>
 </html>

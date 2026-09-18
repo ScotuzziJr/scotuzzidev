@@ -3,7 +3,7 @@ layout: base.njk
 title: "The Bazaar"
 excerpt: "Uma rede social open source para criadores de projetos open source."
 date: 2025-08-12
-tags: portfolio
+tags: projetos
 ---
 
 # The Bazaar

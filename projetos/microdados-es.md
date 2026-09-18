@@ -3,7 +3,7 @@ layout: base.njk
 title: "Análise da presença feminina no ensino superior em computação no Brasil"
 excerpt: "Análise dos microdados do Ensino Superior no Brasil com o objetivo de entender a presença feminna na graduação, sobretudo nas áreas de computação."
 date: 2025-09-22
-tags: portfolio
+tags: projetos
 ---
 
 # Análise da presença feminina no ensino superior em computação no Brasil

@@ -1,37 +1,8 @@
 ---
 layout: base.njk
-title: "Márcio Scotuzzi Jr."
+title: "marc."
+templateEngineOverride: njk,md
 ---
 
-<section style="display:flex; align-items:center; gap:2rem; margin-top:3rem; flex-wrap:wrap;">
-  <img src="/marc.jpg" alt="Foto de Márcio" style="width:200px; border-radius:50%; flex-shrink:0;">
-  <div style="flex:1; min-width:250px;">
-    <h1 style="margin-bottom:0.5rem;">Olá, eu sou o Márcio 👋</h1>
-    <p>Depois de quatro anos atuando como desenvolvedor fullstack com tecnologias como <strong>Python, Django, FastAPI, Node e React</strong>, criando soluções para web em ambientes em nuvem eu passei por uma transição de carreira para a área de dados. Isso aconteceu de forma espontânea, principalmente devido a minha vivência em <strong>ciência de dados</strong>, contrução de <strong>pipelines ETL</strong> e <strong>dashboards.</strong></p>
-    <p>Aqui você encontra links úteis para entrar em contato comigo, além de projetos que mostram um pouco do meu trabalho. A minha parte favorita desse site, no entanto, é seção <a href="/blog">blog</a>, onde eu compartilho ideias sobre diferentes temas. Fique à vontade para explorar e, sobretudo, se conectar. Eu adoro conhecer novas pessoas e conversar sobre variados assuntos!</p>
-    <a href="/curriculo.pdf" class="btn" style="margin-top:1rem;">📄 Baixar meu currículo</a>
-  </div>
-</section>
-
-<section style="margin-top:4rem;">
-  <h2>Meus Projetos & Conteúdos</h2>
-  <div style="display:flex; gap:1.5rem; flex-wrap:wrap; margin-top:1rem;">
-    <div style="flex:1; min-width:250px; padding:1rem; border-radius:12px; background:#f5f5f5;">
-      <h3>🎙️ Podcast</h3>
-      <p><strong>Testando em Prod</strong> – compartilho experiências e insights sobre desenvolvimento, tecnologia e cultura dev. <a href="https://open.spotify.com/show/10RjTXaUYMPjcmbfxyqaGm?si=e608649bea78482e">Ouça agora</a></p>
-    </div>
-    <div style="flex:1; min-width:250px; padding:1rem; border-radius:12px; background:#f5f5f5;">
-      <h3>💻 Open Source</h3>
-      <p>Eu criei o <strong>The Bazaar</strong>, uma rede social open source para projetos open source. <a href="https://thebazaar.dev.br/" target="_blank">Confira aqui</a>.</p>
-    </div>
-  </div>
-</section>
-
-<section style="margin-top:4rem;">
-  <h3 style="display: flex; justify-content: center;">Me acompanhe</h3>
-  <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:1rem;justify-content:center;">
-    <a href="https://github.com/ScotuzziJr/" target="_blank" style="font-size: 13px; padding:0.5rem 1rem; background:#333; color:white; border-radius:5px;">GitHub</a>
-    <a href="https://www.linkedin.com/in/m%C3%A1rcio-scotuzzi-junior-843041193/" target="_blank" style="font-size: 13px; padding:0.5rem 1rem; background:#0A66C2; color:white; border-radius:5px;">LinkedIn</a>
-    <a href="https://www.youtube.com/@marcpy" target="_blank" style="font-size: 13px; padding:0.5rem 1rem; background:#FF0000; color:white; border-radius:5px;">YouTube</a>
-  </div>
-</section>
+{% set collectionName = "blog" %}
+{% include "post-list.njk" %}

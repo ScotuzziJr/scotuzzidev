@@ -3,7 +3,7 @@ layout: base.njk
 title: "Pipeline ETL de dados do Distrowatch"
 excerpt: "Uma pipeline ETL construída com Python e Apache Airflow para extrair dados do DistroWatch sobre distribuições Linux."
 date: 2025-08-12
-tags: portfolio
+tags: projetos
 ---
 
 # ETL Pipeline — DistroWatch Data
